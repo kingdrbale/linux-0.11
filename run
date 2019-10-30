@@ -1,0 +1,4 @@
+#!/bin/sh
+export OSLAB_PATH=$(dirname `which $0`)
+clear
+bochs -q -f $OSLAB_PATH/bochs/bochsrc.bxrc
