@@ -18,7 +18,7 @@
 #define DEFAULT_MAJOR_ROOT 3
 #define DEFAULT_MINOR_ROOT 1
 
-#define SETUP_SECTS 4
+#define SETUP_SECTS 1
 
 #define STRINGIFY(x) #x
 
@@ -32,7 +32,6 @@ int main(int argc, char **argv)
 {
     int i,c,id;
     char buf[1024];
-    char *baby = "baby";
     int major_root, minor_root;
     struct stat file;
 //    echo_paras(argc,argv);
@@ -128,7 +127,7 @@ int main(int argc, char **argv)
     close(id);
     fprintf(stderr,"========================\nboot/bootsect.s ALL OK !\n========================\n");
 
-/*
+
     // ¼ì²ésetup
 
 	if ((id=open(argv[2],O_RDONLY,0))<0)
@@ -147,11 +146,13 @@ int main(int argc, char **argv)
 		die("Non-Minix header of 'setup'");
 	if (((long *) buf)[7] != 0)
 		die("Illegal symbol table in 'setup'");
-    for(i=0;(c=read(id,buf,sizeof(buf))>0); i+=c)
+    for(i=0;(c=read(id,buf,sizeof(buf)))>0; i+=c)
+    //for(i=0;(c=read(id,buf,sizeof buf))>0 ; i+=c)
         if(write(1,buf,c)!=c)
             die("Write call failed");
     close(id);
 
+    
     if (i > SETUP_SECTS*512)
 		die("Setup exceeds " STRINGIFY(SETUP_SECTS)" sectors - rewrite build/boot/setup");
 
@@ -170,7 +171,8 @@ int main(int argc, char **argv)
             die("Write call failed");
         i += c;
     }
-*/
+    fprintf(stderr,"========================\nboot/setup.s ALL OK !\n========================\n");
+
     return 0;
 }
 

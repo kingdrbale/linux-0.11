@@ -31,13 +31,13 @@
 00000000000i[      ]   Sound support: no
 00000000000i[      ]   USB support: no
 00000000000i[      ]   VGA extension support: vbe
-00000000000i[MEM0  ] allocated memory at 0x7fab288d3010. after alignment, vector=0x7fab288d4000
+00000000000i[MEM0  ] allocated memory at 0x7f7b3da95010. after alignment, vector=0x7f7b3da96000
 00000000000i[MEM0  ] 16.00MB
 00000000000i[MEM0  ] mem block size = 0x00020000, blocks=128
 00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('./bochs/BIOS-bochs-latest')
 00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS  ] Using local time for initial clock
-00000000000i[CMOS  ] Setting initial clock to: Wed Oct 30 15:53:24 2019 (time0=1572422004)
+00000000000i[CMOS  ] Setting initial clock to: Fri Nov  1 14:56:17 2019 (time0=1572591377)
 00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA   ] channel 4 used by cascade
 00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
@@ -133,27 +133,27 @@
 00000601871i[BXVGA ] VBE known Display Interface b0c0
 00000601903i[BXVGA ] VBE known Display Interface b0c4
 00000604828i[VBIOS ] VBE Bios $Id: vbe.c,v 1.58 2006/08/19 09:39:43 vruppert Exp $
-00000607228i[XGUI  ] charmap update. Font is 9 x 16
+00000608628i[XGUI  ] charmap update. Font is 9 x 16
 00001119217i[BIOS  ] Booting from 0000:7c00
-00002796536i[XGUI  ] charmap update. Font is 9 x 16
-00088492000p[XGUI  ] >>PANIC<< POWER button turned off.
-00088492000i[CPU0  ] CPU is in real mode (active)
-00088492000i[CPU0  ] CS.mode = 16 bit
-00088492000i[CPU0  ] SS.mode = 16 bit
-00088492000i[CPU0  ] EFER   = 0x00000000
-00088492000i[CPU0  ] | EAX=60000087  EBX=00008bab  ECX=0000000e  EDX=0000ecfe
-00088492000i[CPU0  ] | ESP=0000feef  EBP=0000000f  ESI=ffff0072  EDI=0008ffff
-00088492000i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of DF if tf SF zf af pf cf
-00088492000i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
-00088492000i[CPU0  ] |  CS:f000( 0004| 0|  0) 000f0000 0000ffff 0 0
-00088492000i[CPU0  ] |  DS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
-00088492000i[CPU0  ] |  SS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
-00088492000i[CPU0  ] |  ES:07c0( 0005| 0|  0) 00007c00 0000ffff 0 0
-00088492000i[CPU0  ] |  FS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
-00088492000i[CPU0  ] |  GS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
-00088492000i[CPU0  ] | EIP=0000ff53 (000000ff)
-00088492000i[CPU0  ] | CR0=0x60000010 CR2=0x00000000
-00088492000i[CPU0  ] | CR3=0x00000000 CR4=0x00000000
-00088492000i[CMOS  ] Last time is 1572422026 (Wed Oct 30 15:53:46 2019)
-00088492000i[XGUI  ] Exit
-00088492000i[SIM   ] quit_sim called with exit code 1
+00002634824i[XGUI  ] charmap update. Font is 9 x 16
+01089952000p[XGUI  ] >>PANIC<< POWER button turned off.
+01089952000i[CPU0  ] CPU is in real mode (active)
+01089952000i[CPU0  ] CS.mode = 16 bit
+01089952000i[CPU0  ] SS.mode = 16 bit
+01089952000i[CPU0  ] EFER   = 0x00000000
+01089952000i[CPU0  ] | EAX=6000570b  EBX=0000000f  ECX=00000013  EDX=00001100
+01089952000i[CPU0  ] | ESP=0000fef8  EBP=00000018  ESI=ffff0200  EDI=00080200
+01089952000i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf zf AF pf cf
+01089952000i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
+01089952000i[CPU0  ] |  CS:9020( 0004| 0|  0) 00090200 0000ffff 0 0
+01089952000i[CPU0  ] |  DS:9000( 0005| 0|  0) 00090000 0000ffff 0 0
+01089952000i[CPU0  ] |  SS:9000( 0005| 0|  0) 00090000 0000ffff 0 0
+01089952000i[CPU0  ] |  ES:9020( 0005| 0|  0) 00090200 0000ffff 0 0
+01089952000i[CPU0  ] |  FS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+01089952000i[CPU0  ] |  GS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+01089952000i[CPU0  ] | EIP=0000fb24 (0000fb24)
+01089952000i[CPU0  ] | CR0=0x60000010 CR2=0x00000000
+01089952000i[CPU0  ] | CR3=0x00000000 CR4=0x00000000
+01089952000i[CMOS  ] Last time is 1572591649 (Fri Nov  1 15:00:49 2019)
+01089952000i[XGUI  ] Exit
+01089952000i[SIM   ] quit_sim called with exit code 1
